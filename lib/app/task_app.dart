@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task_manager/features/splash/view/splash_view.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import '../core/routes/app_routes.dart';
 import '../core/theme/app_theme.dart';
 import '../generated/l10n.dart';
 
@@ -15,10 +16,11 @@ class TaskApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-        return MaterialApp(
+        return MaterialApp.router(
           debugShowCheckedModeBanner: false,
           theme: AppTheme.darkTheme,
-          home: SplashView(),
+          routerConfig: AppRoutes.router,
+
           supportedLocales: S.delegate.supportedLocales,
           localizationsDelegates: [
             S.delegate,
@@ -26,6 +28,14 @@ class TaskApp extends StatelessWidget {
             GlobalWidgetsLocalizations.delegate,
             GlobalCupertinoLocalizations.delegate,
           ],
+          builder: (context, child) {
+            return GestureDetector(
+              onTap: () {
+                FocusScope.of(context).unfocus();
+              },
+              child: child,
+            );
+          },
         );
       },
     );

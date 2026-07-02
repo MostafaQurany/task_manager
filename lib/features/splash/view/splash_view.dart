@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:task_manager/core/constants/app_images.dart';
+import 'package:task_manager/core/routes/routes_name.dart';
 import 'package:task_manager/core/theme/app_colors.dart';
 import 'package:task_manager/features/splash/widget/center_logo_animation.dart';
 import '../../../core/widgets/background_gradiant.dart';
@@ -133,7 +135,9 @@ class _SplashViewState extends State<SplashView>
                 width: 170
                     .w, // Assigned an explicit width so it has clean visual scale symmetry
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    context.go(RoutesName.homeScreen);
+                  },
                   style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.symmetric(
                       horizontal: 16.w,

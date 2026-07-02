@@ -29,12 +29,13 @@ class _BackgroundGradientState extends State<BackgroundGradient>
 
     _curveAnimation = CurvedAnimation(
       parent: _controller,
-      curve: Curves.easeOutExpo,
+      curve: Curves.easeInOutExpo,
     );
 
-    if (widget.activeAnimation) {
-      _controller.forward();
-    }
+      if (widget.activeAnimation) {
+        _controller.forward();
+      }
+  
   }
 
   @override
@@ -60,15 +61,16 @@ class _BackgroundGradientState extends State<BackgroundGradient>
     return AnimatedBuilder(
       animation: _curveAnimation,
       builder: (context, child) {
-        final currentStop = _curveAnimation.value * 0.28;
+        final currentStop = _curveAnimation.value * 0.32;
 
         return Container(
           decoration: BoxDecoration(
             gradient: !widget.activeAnimation
                 ? AppColors.mainGradient
                 : LinearGradient(
-                    begin: AlignmentDirectional.topCenter,
-                    end: AlignmentDirectional.bottomStart,
+                    // Aligns the start above the screen (-1.2) to simulate negative stops safely
+                    begin: const Alignment(0.0, -1.2),
+                    end: Alignment.bottomLeft,
                     colors: const [
                       AppColors.primary,
                       Color(0xFF14161E),
@@ -76,6 +78,7 @@ class _BackgroundGradientState extends State<BackgroundGradient>
                       Color(0xFF000000),
                       Color.fromARGB(255, 48, 51, 58),
                     ],
+                    // Corrected safe order: 0.0, then currentStop (0.0 up to 0.28)
                     stops: [0.0, currentStop, 0.52, 0.95, 1.0],
                   ),
           ),

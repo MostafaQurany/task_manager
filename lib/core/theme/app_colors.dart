@@ -55,7 +55,13 @@ class AppColors {
   static const LinearGradient softPeachGradient = LinearGradient(
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
-    colors: [Color(0xFFFFC5A8), Color(0xFFB98775), Color(0xFF111827)],
+    colors: [
+      Color(0xFFFFC5A8),
+      Color(0xFFB98775),
+      Color(0xFF111827),
+      Colors.black,
+    ],
+    stops: [0.0, 0.18, 0.45, 1.0],
   );
 
   static const LinearGradient darkCardGradient = LinearGradient(
