@@ -14,7 +14,7 @@ class TaskChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 30.h,
+      height: 20.h,
       padding: EdgeInsets.symmetric(horizontal: 20.w),
       decoration: BoxDecoration(
         color: tag.backgroundColor,
@@ -25,7 +25,7 @@ class TaskChip extends StatelessWidget {
           tag.text,
           style: TextStyle(
             color: tag.textColor,
-            fontSize: 12.sp,
+            fontSize: 8.sp,
             fontWeight: FontWeight.w800,
           ),
         ),

@@ -1,19 +1,16 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task_manager/core/theme/app_colors.dart';
 
-import '../view/home_view.dart';
-
-class FilterButton extends StatelessWidget {
+class FilterButton<T> extends StatelessWidget {
   final String title;
-  final TaskFilter value;
-  final TaskFilter selectedFilter;
+  final T value;
+  final T selectedFilter;
   final bool showDot;
-  final ValueChanged<TaskFilter> onSelected;
+  final ValueChanged<T> onSelected;
 
   const FilterButton({
+    super.key,
     required this.title,
     required this.value,
     required this.selectedFilter,
@@ -37,7 +34,7 @@ class FilterButton extends StatelessWidget {
           boxShadow: isSelected
               ? [
                   BoxShadow(
-                    color: Colors.black.withValues(alpha: 0.18),
+                    color: AppColors.shadowLight,
                     blurRadius: 10.r,
                     offset: Offset(0, 4.r),
                   ),
@@ -51,7 +48,7 @@ class FilterButton extends StatelessWidget {
                 width: 8.w,
                 height: 8.h,
                 decoration: const BoxDecoration(
-                  color: Color(0xFF9DFF8F),
+                  color: AppColors.activeDot,
                   shape: BoxShape.circle,
                 ),
               ),
@@ -61,8 +58,8 @@ class FilterButton extends StatelessWidget {
               title,
               style: TextStyle(
                 color: isSelected
-                    ? const Color.fromARGB(255, 103, 103, 104)
-                    : Colors.white.withValues(alpha: 0.55),
+                    ? AppColors.filterTextSelected
+                    : AppColors.filterTextUnselected,
                 fontSize: 10.sp,
                 fontWeight: FontWeight.w700,
               ),

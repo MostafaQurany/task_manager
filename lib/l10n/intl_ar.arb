@@ -1,0 +1,165 @@
+{
+  "@@locale": "ar",
+  "appTitle": "مدير المهام",
+
+  "navHome": "الرئيسية",
+  "navTimeline": "الجدول الزمني",
+  "navTasks": "المهام",
+  "navSettings": "الإعدادات",
+  "navNewTask": "مهمة جديدة",
+
+  "greetingUser": "مرحباً {userName}!",
+  "@greetingUser": {
+    "placeholders": {
+      "userName": {
+        "type": "String"
+      }
+    }
+  },
+  "taskSummaryTitle": "ملخص المهام",
+  "inProgress": "قيد التنفيذ",
+  "completed": "مكتملة",
+  "searchHint": "ابحث عن المهام والتصنيفات...",
+  "recentTasks": "المهام الأخيرة",
+  "filterActive": "نشطة",
+  "filterDone": "مكتملة",
+
+  "dailyTimeline": "الجدول اليومي",
+  "timelineSubtitle": "المهام المجدولة لليوم",
+  "timelineToday": "اليوم، 15 سبتمبر",
+
+  "allTasksTitle": "جميع المهام",
+  "activeCount": "{count} نشطة",
+  "@activeCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "completedCount": "{count} مكتملة",
+  "@completedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "filterAllTasks": "الكل",
+  "filterUrgent": "عاجل",
+  "filterInProgress": "قيد التنفيذ",
+  "urgent": "عاجل",
+
+  "filterToday": "اليوم",
+  "filterReadyToStart": "جاهز للبدء",
+  "filterBlocked": "معلّق",
+  "filterRevisions": "تعديلات",
+  "filterWaitingReview": "بانتظار المراجعة",
+
+  "statusToDo": "قيد الانتظار",
+  "statusReadyToStart": "جاهز للبدء",
+  "statusInProgress": "قيد التنفيذ",
+  "statusInternalReview": "مراجعة داخلية",
+  "statusRevisionInternal": "تعديل داخلي",
+  "statusReadyForClientReview": "جاهز للعميل",
+  "statusClientReview": "مراجعة العميل",
+  "statusRevisionClient": "تعديل مطلوب من العميل",
+  "statusApproved": "معتمد",
+  "statusCompleted": "مكتمل",
+
+  "waitingOnClient": "بانتظار العميل",
+  "waitingOnTeam": "بانتظار الفريق",
+  "waitingOnNone": "لا يوجد",
+
+  "taskDetailTitle": "تفاصيل المهمة",
+  "internalComments": "داخلي",
+  "clientComments": "العميل",
+  "versionHistory": "سجل الإصدارات",
+  "versionNumber": "الإصدار {version}",
+  "@versionNumber": {
+    "placeholders": {
+      "version": {
+        "type": "int"
+      }
+    }
+  },
+  "noComments": "لا توجد تعليقات بعد",
+  "noVersions": "لا يوجد سجل إصدارات",
+  "addCommentHint": "اكتب تعليقاً...",
+  "submitInternalReview": "إرسال للمراجعة الداخلية",
+  "approveAndSendToClient": "اعتماد وإرسال للعميل",
+  "requestRevision": "طلب تعديل",
+  "blockedBy": "معلّق بسبب: {taskTitle}",
+  "@blockedBy": {
+    "placeholders": {
+      "taskTitle": {
+        "type": "String"
+      }
+    }
+  },
+  "service": "الخدمة:",
+  "client": "العميل:",
+  "noDependency": "بدون اعتمادية",
+  "selectDependency": "اختر الاعتمادية",
+  "selectService": "اختر الخدمة",
+  "services": "الخدمات",
+
+  "createTaskTitle": "إنشاء مهمة",
+  "saveTask": "حفظ المهمة",
+  "taskCreated": "تم إنشاء المهمة بنجاح!",
+  "assignedTo": "مُسند إلى:",
+  "company": "العميل:",
+  "dateRange": "الفترة الزمنية:",
+  "timeRange": "نطاق الوقت:",
+  "description": "الوصف:",
+  "checklist": "قائمة التحقق:",
+  "noItems": "لا توجد عناصر",
+  "checklistSummary": "{total} عناصر ({done} مكتملة)",
+  "@checklistSummary": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      },
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "done": "تم",
+
+  "profileAndSettings": "الملف الشخصي والإعدادات",
+  "preferences": "التفضيلات",
+  "accountAndSecurity": "الحساب والأمان",
+  "pushNotifications": "الإشعارات الفورية",
+  "language": "اللغة",
+  "currentLanguage": "العربية (Arabic)",
+  "securityAndPin": "الأمان ورمز PIN",
+  "logOut": "تسجيل الخروج",
+  "tasksDone": "المهام المنجزة",
+  "activeTasks": "المهام النشطة",
+  "streak": "سلسلة الإنجاز",
+  "daysStreak": "{days} أيام",
+  "@daysStreak": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "selectLanguage": "اختر اللغة",
+  "english": "English (الإنجليزية)",
+  "arabic": "العربية (Arabic)",
+  "edit": "تعديل",
+
+  "notificationsTitle": "الإشعارات",
+  "unreadNotifications": "{count} إشعارات غير مقروءة",
+  "@unreadNotifications": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "markAllRead": "تحديد الكل كمقروء",
+  "noNotifications": "لا توجد إشعارات حالياً"
+}

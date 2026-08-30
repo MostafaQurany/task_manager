@@ -44,14 +44,16 @@ class _CenterLogoAnimationState extends State<CenterLogoAnimation>
     return Stack(
       alignment: Alignment.center,
       children: [
-        AnimatedBuilder(
-          animation: animationController,
-          builder: (context, child) {
-            return Transform.rotate(
-              angle: animationController.value * (2 * math.pi),
-              child: Image.asset(AppImages.circle, width: 250.w, height: 250.h),
-            );
-          },
+        RepaintBoundary(
+          child: AnimatedBuilder(
+            animation: animationController,
+            builder: (context, child) {
+              return Transform.rotate(
+                angle: animationController.value * (2 * math.pi),
+                child: Image.asset(AppImages.circle, width: 250.w, height: 250.h),
+              );
+            },
+          ),
         ),
         AnimatedBuilder(
           animation: scaleController,

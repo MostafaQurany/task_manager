@@ -39,6 +39,34 @@ class AppColors {
   static const Color border = Color(0xFF3A3A3A);
   static const Color borderLight = Color(0xFFE8E8E8);
 
+  // Home Filters & Headers
+  static const Color activeDot = Color(0xFF9DFF8F);
+  static const Color filterTextSelected = Color(0xFF676768);
+  static const Color filterTextUnselected = Color(0x8CFFFFFF);
+  static const Color filterBarBackground = Color(0xCC3C4050);
+  static const Color filterBarBorder = Color(0x2EFFFFFF);
+
+  // Home Search Box
+  static const Color searchBoxFill = Color(0x33FFFFFF);
+  static const Color searchBoxBorder = Color(0x38FFFFFF);
+  static const Color searchBoxHint = Color(0xBFFFFFFF);
+  static const Color darkIconBackground = Color(0xFF252833);
+
+  // Home Cards & Tags
+  static const Color lightCardBg = Color(0xFFE4F7FC);
+  static const Color darkCardBg = Color(0xFF1C212A);
+  static const Color darkCardBorder = Color(0xFF4B5563);
+  static const Color cardDescLight = Color(0xFF8B9297);
+  static const Color cardDateLight = Color(0xFF4F5961);
+  static const Color cardDescDark = Color(0xFF8E929B);
+  static const Color cardDateDark = Color(0xFFB5B8C0);
+  static const Color orangeTag = Color(0xFFFFB186);
+  static const Color lightBlueTag = Color(0xFFEAF8FF);
+
+  // Shadows
+  static const Color shadowLight = Color(0x2E000000);
+  static const Color shadowDark = Color(0x59000000);
+
   static const LinearGradient mainGradient = LinearGradient(
     end: AlignmentDirectional.bottomStart,
     begin: AlignmentDirectional.topCenter,
@@ -61,7 +89,7 @@ class AppColors {
       Color(0xFF111827),
       Colors.black,
     ],
-    stops: [0.0, 0.18, 0.45, 1.0],
+    stops: [0.0, 0.3, 0.7, 1.0],
   );
 
   static const LinearGradient darkCardGradient = LinearGradient(

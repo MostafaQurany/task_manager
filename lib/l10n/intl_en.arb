@@ -1,1 +1,165 @@
-{}
+{
+  "@@locale": "en",
+  "appTitle": "Task Manager",
+
+  "navHome": "Home",
+  "navTimeline": "Timeline",
+  "navTasks": "Tasks",
+  "navSettings": "Settings",
+  "navNewTask": "New Task",
+
+  "greetingUser": "Hey {userName}!",
+  "@greetingUser": {
+    "placeholders": {
+      "userName": {
+        "type": "String"
+      }
+    }
+  },
+  "taskSummaryTitle": "Task Summary",
+  "inProgress": "In Progress",
+  "completed": "Completed",
+  "searchHint": "Search tasks, tags...",
+  "recentTasks": "Recent Tasks",
+  "filterActive": "Active",
+  "filterDone": "Done",
+
+  "dailyTimeline": "Daily Timeline",
+  "timelineSubtitle": "Today's scheduled tasks",
+  "timelineToday": "Today, 15 September",
+
+  "allTasksTitle": "All Tasks",
+  "activeCount": "{count} active",
+  "@activeCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "completedCount": "{count} completed",
+  "@completedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "filterAllTasks": "All Tasks",
+  "filterUrgent": "Urgent",
+  "filterInProgress": "In Progress",
+  "urgent": "Urgent",
+
+  "filterToday": "Today",
+  "filterReadyToStart": "Ready to Start",
+  "filterBlocked": "Blocked",
+  "filterRevisions": "Revisions",
+  "filterWaitingReview": "Waiting for Review",
+
+  "statusToDo": "To Do",
+  "statusReadyToStart": "Ready to Start",
+  "statusInProgress": "In Progress",
+  "statusInternalReview": "Internal Review",
+  "statusRevisionInternal": "Revision (Internal)",
+  "statusReadyForClientReview": "Ready for Client",
+  "statusClientReview": "Client Review",
+  "statusRevisionClient": "Revision (Client)",
+  "statusApproved": "Approved",
+  "statusCompleted": "Completed",
+
+  "waitingOnClient": "Waiting on Client",
+  "waitingOnTeam": "Waiting on Team",
+  "waitingOnNone": "None",
+
+  "taskDetailTitle": "Task Detail",
+  "internalComments": "Internal",
+  "clientComments": "Client",
+  "versionHistory": "Version History",
+  "versionNumber": "Version {version}",
+  "@versionNumber": {
+    "placeholders": {
+      "version": {
+        "type": "int"
+      }
+    }
+  },
+  "noComments": "No comments yet",
+  "noVersions": "No version history",
+  "addCommentHint": "Type a comment...",
+  "submitInternalReview": "Submit for Internal Review",
+  "approveAndSendToClient": "Approve & Send to Client",
+  "requestRevision": "Request Revision",
+  "blockedBy": "Blocked by: {taskTitle}",
+  "@blockedBy": {
+    "placeholders": {
+      "taskTitle": {
+        "type": "String"
+      }
+    }
+  },
+  "service": "Service:",
+  "client": "Client:",
+  "noDependency": "No dependency",
+  "selectDependency": "Select Dependency",
+  "selectService": "Select Service",
+  "services": "Services",
+
+  "createTaskTitle": "Create Task",
+  "saveTask": "Save Task",
+  "taskCreated": "Task Created!",
+  "assignedTo": "Assigned to:",
+  "company": "Client:",
+  "dateRange": "Date Range:",
+  "timeRange": "Time Range:",
+  "description": "Description:",
+  "checklist": "Checklist:",
+  "noItems": "No items",
+  "checklistSummary": "{total} items ({done} completed)",
+  "@checklistSummary": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      },
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "done": "Done",
+
+  "profileAndSettings": "Profile & Settings",
+  "preferences": "PREFERENCES",
+  "accountAndSecurity": "ACCOUNT & SECURITY",
+  "pushNotifications": "Push Notifications",
+  "language": "Language",
+  "currentLanguage": "English (US)",
+  "securityAndPin": "Security & PIN",
+  "logOut": "Log Out",
+  "tasksDone": "Tasks Done",
+  "activeTasks": "Active Tasks",
+  "streak": "Streak",
+  "daysStreak": "{days} Days",
+  "@daysStreak": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "selectLanguage": "Select Language",
+  "english": "English",
+  "arabic": "العربية (Arabic)",
+  "edit": "Edit",
+
+  "notificationsTitle": "Notifications",
+  "unreadNotifications": "{count} unread notifications",
+  "@unreadNotifications": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "markAllRead": "Mark all read",
+  "noNotifications": "No notifications yet"
+}

@@ -319,7 +319,7 @@ packages:
     source: hosted
     version: "0.4.1"
   flutter_localizations:
-    dependency: transitive
+    dependency: "direct main"
     description: flutter
     source: sdk
     version: "0.0.0"
@@ -773,6 +773,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.5.0"
+  progressive_time_picker:
+    dependency: "direct main"
+    description:
+      name: progressive_time_picker
+      sha256: "1cf4c0c0d80c35a6bb39b661ee3f9755ca9fab8faca8d809d9a5f571a7f89e63"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.4"
   pub_semver:
     dependency: transitive
     description:
@@ -838,7 +846,7 @@ packages:
     source: hosted
     version: "0.28.0"
   shared_preferences:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: shared_preferences
       sha256: c3025c5534b01739267eb7d76959bbc25a6d10f6988e1c2a3036940133dd10bf
@@ -1050,6 +1058,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.4.1"
+  syncfusion_flutter_core:
+    dependency: transitive
+    description:
+      name: syncfusion_flutter_core
+      sha256: e7f8efe88922e19b83cd5f008f552442b304f40ff84e5037425e9042e1f1a1bd
+      url: "https://pub.dev"
+    source: hosted
+    version: "34.2.3"
+  syncfusion_flutter_datepicker:
+    dependency: "direct main"
+    description:
+      name: syncfusion_flutter_datepicker
+      sha256: "2aa4fdcb85759fbc72638159eebca3fde0c1b9829a84b434860ba66329c53a91"
+      url: "https://pub.dev"
+    source: hosted
+    version: "34.2.3"
   synchronized:
     dependency: transitive
     description:
@@ -1058,6 +1082,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.4.1"
+  talk_it:
+    dependency: "direct main"
+    description:
+      name: talk_it
+      sha256: "99ab043afeddf27095db7da8f6d6e4c2bfcae27450a5189c4e2750bd13d9c0df"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.1"
   term_glyph:
     dependency: transitive
     description:

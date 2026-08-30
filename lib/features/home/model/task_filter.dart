@@ -1,0 +1,4 @@
+enum TaskFilter {
+  active,
+  done,
+}
